@@ -3,14 +3,14 @@ import 'package:hope_project/constants.dart';
 import 'package:hope_project/size_config.dart';
 
 class DefaultButton extends StatelessWidget {
-  DefaultButton({this.text, this.press});
+  DefaultButton({this.text, this.press, this.buttonSize});
   final String text;
   final Function press;
-
+  final double buttonSize;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: double.infinity,
+      width: buttonSize,
       height: getProportionateScreenHeight(56),
       child: TextButton(
         style: TextButton.styleFrom(

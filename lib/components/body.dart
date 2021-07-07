@@ -27,6 +27,7 @@ class _BodyState extends State<Body> {
   ];
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return SafeArea(
       child: SizedBox(
         width: double.infinity,
@@ -65,6 +66,7 @@ class _BodyState extends State<Body> {
                       ),
                       Spacer(),
                       DefaultButton(
+                        buttonSize: size.width * 0.8,
                         press: () {
                           Navigator.pushNamed(context, UserType.routeName);
                         },

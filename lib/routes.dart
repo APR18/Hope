@@ -2,9 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:hope_project/screens/loading_screen.dart';
 import 'package:hope_project/screens/user_type.dart';
 import 'package:hope_project/screens/customer_login/otp_login.dart';
+import 'package:hope_project/screens/customer_login/login_verification.dart';
 
 final Map<String, WidgetBuilder> routes = {
   LoadingScreen.routeName: (context) => LoadingScreen(),
   UserType.routeName: (context) => UserType(),
-  OtpScreen.routeName: (context) => OtpScreen()
+  OtpScreen.routeName: (context) => OtpScreen(),
+  OTPVerification.routeName: (context) => OTPVerification()
 };

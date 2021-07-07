@@ -8,6 +8,7 @@ class UserType extends StatelessWidget {
   static String routeName = '/user';
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Container(
       color: Colors.white,
       child: Center(
@@ -29,6 +30,7 @@ class UserType extends StatelessWidget {
                           horizontal: getProportionateScreenWidth(20)),
                       child: Container(
                           child: DefaultButton(
+                        buttonSize: size.width * 0.8,
                         text: 'Shop',
                         press: () {},
                       )),
@@ -53,6 +55,7 @@ class UserType extends StatelessWidget {
                           horizontal: getProportionateScreenWidth(20)),
                       child: Container(
                           child: DefaultButton(
+                        buttonSize: size.width * 0.8,
                         text: 'Customer',
                         press: () {
                           Navigator.pushNamed(context, OtpScreen.routeName);
